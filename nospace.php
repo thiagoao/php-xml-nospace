@@ -19,11 +19,11 @@
  * @return xml
  */
 function noSpace( $xml ) {
-	foreach ( $xml as $node => $value ) {
+	foreach ( $xml as $key => $value ) {
 		if ( sizeof( $value ) > 1 ) {
 			noSpace( $value ); // Get next node
 		} else {
-			$xml->$node = trim( $value );
+			$xml->$key = trim( $value );
 		}
 	}
 	return $xml;
