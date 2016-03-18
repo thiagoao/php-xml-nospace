@@ -26,16 +26,16 @@ final class NoXMLSpace
 	 * @return xml
 	 * @access public
 	 */
-	public static function noSpace( $xml = null )
+	public static function noSpace($xml = null)
 	{
 
-		if ( empty( $xml ) || is_null( $xml ) ) return false;
+		if (empty($xml) || is_null($xml)) return false;
 
-		foreach ( $xml as $key => $value ) {
-			if ( sizeof( $value ) > 1 ) {
-				noSpace( $value ); // Get next node
+		foreach ($xml as $key => $value) {
+			if (sizeof($value) > 1) {
+				noSpace($value); // Get next node
 			} else {
-				$xml->$key = trim( $value );
+				$xml->$key = trim($value);
 			}
 		}
 		return $xml;
