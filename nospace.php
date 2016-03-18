@@ -18,12 +18,12 @@
  * @param xml
  * @return xml
  */
-function noSpace( $xml ) {
-	foreach ( $xml as $key => $value ) {
-		if ( sizeof( $value ) > 1 ) {
-			noSpace( $value ); // Get next node
+function noSpace($xml) {
+	foreach ($xml as $key => $value) {
+		if (sizeof($value) > 1) {
+			noSpace($value); // Get next node
 		} else {
-			$xml->$key = trim( $value );
+			$xml->$key = trim($value);
 		}
 	}
 	return $xml;
