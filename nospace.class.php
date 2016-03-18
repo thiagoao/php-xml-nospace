@@ -42,4 +42,4 @@ final class NoXMLSpace
 }
 
 // $xml = simplexml_load_file( $xml_file );
-// Exemple: var_dump( '<pre>', NoXMLSpace::noSpace($xml) );
+// Example: var_dump( '<pre>', NoXMLSpace::noSpace($xml) );
