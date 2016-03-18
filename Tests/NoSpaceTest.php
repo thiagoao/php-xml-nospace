@@ -3,7 +3,7 @@
 class NoSpaceTest extends PHPUnit_Framework_TestCase
 {
 
-    testNoXMLSpace() {
+    function testNoXMLSpace() {
         $xml = simplexml_load_file( 'xml_file.xml' );
         $xml = NoXMLSpace::noSpace($xml);
         
